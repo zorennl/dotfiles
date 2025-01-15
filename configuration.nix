@@ -145,7 +145,6 @@
     nitch # Neofetch equivelant
     vlc # Media player
     vesktop # Discord
-    pip # Python package manager
   
   ];
 
