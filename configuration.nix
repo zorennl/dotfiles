@@ -34,8 +34,8 @@
   services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  # services.xserver.displayManager.gdm.enable = true;
+  # services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -120,14 +120,13 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
 
-    git
+    git # Version control
     helix # Main editor 
     vscode # Second editor
 	  kitty # Terminal emulator
 	  lazygit
     gnome-tweaks
     gnomeExtensions.extension-list
-    protonup-qt 
     wofi # App luancher
     waybar 
     python314
@@ -145,7 +144,23 @@
     nitch # Neofetch equivelant
     vlc # Media player
     vesktop # Discord
-  
+    fzf # Fuzzy finder
+    tealdeer # Tldr man page
+    powertop # Battery optimizations
+    dust # Storage usage
+    # Lsp
+    markdown-oxide
+    marksman
+    python312Packages.python-lsp-server
+    lldb
+    taplo
+    
+    cmake 
+    pkg-config
+    xorg.libX11
+    ocamlPackages.graphics
+    axel # Faster web browser downloads
+
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

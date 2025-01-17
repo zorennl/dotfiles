@@ -2,3 +2,7 @@ theme = 'gruvbox_dark_hard'
 
 [editor]
 idle-timeout = 0
+mouse = false
+
+[keys.insert]
+A-x = 'normal_mode'
