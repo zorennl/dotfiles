@@ -1,10 +1,16 @@
-[language-server.mylang-lsp]
-command = "mylang-lsp"
+[language-server.vscode-html]
+command = "vscode-html-language-server"
+args = ["--stdio"]
 
 [[language]]
 name = "rust"
 auto-format = true
 language-servers = ["rls"]
+
+[[html]]
+name = "html"
+auto-format = true
+language-servers = ["vscode-html"]
 
 [[language]]
 auto-format = true

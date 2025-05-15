@@ -1,4 +1,5 @@
-theme = 'gruvbox_dark_hard'
+# theme = 'gruvbox_dark_hard'
+theme = 'flexoki_dark'
 
 [editor]
 idle-timeout = 0
