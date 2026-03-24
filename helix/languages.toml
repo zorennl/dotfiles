@@ -1,36 +1,42 @@
-[language-server.vscode-html]
-command = "vscode-html-language-server"
-args = ["--stdio"]
-
 [[language]]
 name = "rust"
 auto-format = true
-language-servers = ["rls"]
 
-[[html]]
-name = "html"
-auto-format = true
-language-servers = ["vscode-html"]
+roots = [
+    "Cargo.toml",
+    "Cargo.lock"
+]
 
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
+[language-server.rust-analyzer.config]
+inlayHints.bindingModeHints.enable = false
+
+# Python
 [[language]]
-auto-format = true
-language-servers = ["pylsp"]
 name = "python"
-scope = "source.python"
+language-servers = ["pylsp"]
+auto-format = true
 
+[language-server.pylsp]
+command = "pylsp"
 
-[language-server.pylsp.config.plugins]
-autopep8 = { enabled = false }
-black = { enabled = true }
-flake8 = { enabled = true }
-mccabe = { enabled = false }
-mypy = { enabled = true, live_mode = true, strict = true }
-pycodestyle = { enabled = false }
-pydocstyle = { enabled = false }
-pyflakes = { enabled = false }
-pylint = { enabled = false }
-pyls_isort = { enabled = true }
-rope_autoimport = { enabled = true }
-yapf = { enabled = false }
+# Go
+[[language]]
+name = "go"
+language-servers = ["gopls"]
+auto-format = true
 
+[language-server.gopls]
+command = "gopls"
 
+# JSON
+[[language]]
+name = "json"
+language-servers = ["vscode-json-language-server"]
+auto-format = true
+
+[language-server.vscode-json-language-server]
+command = "vscode-json-language-server"
+args = ["--stdio"]

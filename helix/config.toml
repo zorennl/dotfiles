@@ -1,9 +1,2 @@
-# theme = 'gruvbox_dark_hard'
-theme = 'flexoki_dark'
-
-[editor]
-idle-timeout = 0
-mouse = false
-
-[keys.insert]
-A-x = 'normal_mode'
+# theme = "ashen"
+theme = "base16_transparent"
