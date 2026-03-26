@@ -1,15 +1,24 @@
 keybind=clear
 
-keybind=ctrl+shift+v=paste_from_clipboard
 keybind=ctrl+shift+c=copy_to_clipboard:mixed
+keybind=ctrl+shift+v=paste_from_clipboard
+keybind=super+c=copy_to_clipboard:mixed
+keybind=super+v=paste_from_clipboard
 keybind=ctrl+shift+,=reload_config
 keybind=ctrl+,=open_config
 keybind=ctrl+shift+q=quit
-keybind=ctrl++=increase_font_size:1
+keybind=ctrl+==increase_font_size:1
 keybind=ctrl+-=decrease_font_size:1
+keybind=ctrl+0=reset_font_size
 keybind=ctrl+f=start_search
 keybind=ctrl+enter=toggle_fullscreen
+keybind=super+arrow_left=text:\\x01
+keybind=super+arrow_right=text:\\x05
+keybind=super+a=select_all
+keybind=ctrl+z=undo
+keybind=ctrl+shift+z=redo
 
+keybind=ctrl+d=close_surface
 keybind=ctrl+shift+j=new_split:down
 keybind=ctrl+shift+k=new_split:up
 keybind=ctrl+shift+h=new_split:left
@@ -18,6 +27,11 @@ keybind=ctrl+j=goto_split:down
 keybind=ctrl+k=goto_split:up
 keybind=ctrl+h=goto_split:left
 keybind=ctrl+l=goto_split:right
+keybind=ctrl+alt+=equalize_splits
+keybind=ctrl+alt+j=resize_split:down,10
+keybind=ctrl+alt+k=resize_split:up,10
+keybind=ctrl+alt+h=resize_split:left,10
+keybind=ctrl+alt+l=resize_split:right,10
 
 keybind=ctrl+t=new_tab
 keybind=ctrl+w=close_tab
