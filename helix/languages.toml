@@ -1,42 +1,19 @@
-[[language]]
-name = "rust"
+[rust]
+language-servers = ["rust-analyzer"]
 auto-format = true
 
-roots = [
-    "Cargo.toml",
-    "Cargo.lock"
-]
-
-[language-server.rust-analyzer]
-command = "rust-analyzer"
-
-[language-server.rust-analyzer.config]
-inlayHints.bindingModeHints.enable = false
-
-# Python
-[[language]]
-name = "python"
+[python]
 language-servers = ["pylsp"]
 auto-format = true
 
-[language-server.pylsp]
-command = "pylsp"
-
-# Go
-[[language]]
-name = "go"
+[go]
 language-servers = ["gopls"]
 auto-format = true
 
-[language-server.gopls]
-command = "gopls"
-
-# JSON
-[[language]]
-name = "json"
+[json]
 language-servers = ["vscode-json-language-server"]
 auto-format = true
 
-[language-server.vscode-json-language-server]
-command = "vscode-json-language-server"
-args = ["--stdio"]
+# [language-server.vscode-json-language-server]
+# command = "vscode-json-language-server"
+# args = ["--stdio"]
