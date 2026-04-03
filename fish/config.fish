@@ -1,11 +1,3 @@
-source /usr/share/cachyos-fish-config/cachyos-config.fish
-
-# overwrite greeting
-# potentially disabling fastfetch
-#function fish_greeting
-#    # smth smth
-#end
-#
+set -g fish_greeting " "
 zoxide init fish | source
-alias hx="helix"
-# fastfetch
+fastfetch

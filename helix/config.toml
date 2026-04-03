@@ -1,3 +1,4 @@
 # theme = "ashen"
 # theme = "base16_transparent"
-theme = "gruvbox_dark_hard"
+# theme = "gruvbox_dark_hard"
+theme = "ayu_dark"
